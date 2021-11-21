@@ -13,6 +13,4 @@ function reverseString(str) {
     res += reverseString(str);
     return res;
 }
-
-
 console.log(reverseString(word));
