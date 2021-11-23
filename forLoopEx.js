@@ -16,4 +16,14 @@ function countEvenOnRange (num) {
         }
         return counter
 }
-console.log(countEvenOnRange(112))
+//console.log(countEvenOnRange(112))
+
+// כתוב פונקציה printReverse שמדפיסה את כל המספרים הזוגיים מ0 ועד 100 בסדר יורד.
+// בונוס : לכתוב את הפונקציה בלי if :)
+
+function printReverse () {
+    for (i=100 ; i>1 ; i=i-2) {
+        console.log(i)
+    }
+}
+//console.log(printReverse());
