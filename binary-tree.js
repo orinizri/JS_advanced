@@ -16,3 +16,6 @@ root_node.right.left = new Node(6);
 root_node.right.right = new Node(8);
 // Observing the tree
 console.log(root_node);
+// Preorder - console.log first
+// inorder - small to big, left, data,right. 
+// post order - after console.log. from the endges to the root. good for removing trees
