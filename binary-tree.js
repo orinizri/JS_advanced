@@ -4,6 +4,7 @@ class Node {
         this.left = left;
         this.right = right;
     }
+
 }
 let root_node = new Node(5); 
 // Left root
@@ -19,3 +20,15 @@ console.log(root_node);
 // Preorder - console.log first
 // inorder - small to big, left, data,right. 
 // post order - after console.log. from the endges to the root. good for removing trees
+
+
+//preorder function
+function runTree(node) {
+    if (!node) return;
+    console.log(node.data)
+    runTree(node.left)
+    runTree(node.right)
+}
+
+
+console.log(runTree(root_node))
