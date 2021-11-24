@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        
+        <script>
+            let h1 = document.createElement('p');
+            let text = document.createTextNode('how many? ');
+            document.body.appendChild(h1.appendChild(text));
+            let inpt = document.createElement('input');
+            inpt.placeholder = "Write down a number.";
+            document.body.append(inpt);
+            let btn = document.createElement('button')
+            btn.textContent = "submit";
+            document.body.append(btn);
+            document.addEventListener("click" , () => {
+                console.log(inpt.value)
+                for (let i = 0 ; i < inpt.value ; i++) {
+                    let span = document.createElement("p");
+                    span.textContent = ":)";
+                    document.body.append(span)
+                }
+            })
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
