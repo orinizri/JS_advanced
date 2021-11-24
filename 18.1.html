@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <a href="#">link</a>
+    <img src="" alt="" />
+    <div class="x">Div with a class</div>
+    <div id="y">Div with an id</div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <script>
+        const p = document.querySelectorAll('p')
+        const h1 = document.querySelectorAll('h1')
+        const a = document.querySelectorAll('a')
+        const img = document.querySelectorAll('img')
+        const div = document.querySelectorAll('div')
+        const input = document.querySelectorAll('input')
+        // console.log(p);
+        // console.log(h1);
+        // console.log(a);
+        // console.log(img);
+        // console.log(div);
+        // console.log(input);
+        const p_2 = document.getElementsByTagName('p');
+        const h1_2 = document.getElementsByTagName('h1');
+        const a_2 = document.getElementsByTagName('a');
+        const img_2 = document.getElementsByTagName('img');
+        const div_2 = document.getElementsByTagName('div');
+        const input_2 = document.getElementsByTagName('input');
+        // console.log(p_2);
+        // console.log(h1_2);
+        // console.log(a_2);
+        // console.log(img_2);
+        // console.log(div_2);
+        // console.log(input_2);
+        const allInputs = document.querySelectorAll("input");
+        const allInputsGet = document.getElementsByTagName("input")
+        
+        
+        console.log(allInputsGet)
+        Array.from(allInputsGet).forEach( (element) => {
+            console.log(element);
+            
+        });
+        
+        
+        
+    </script>
+</body>
+
+
+</html>
