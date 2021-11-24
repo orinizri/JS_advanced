@@ -45,11 +45,12 @@ initial-scale=1.0" />
         // console.log(div_2);
         // console.log(input_2);
         const allInputs = document.querySelectorAll("input");
+        
         const allInputsGet = document.getElementsByTagName("input")
         
         
         console.log(allInputsGet)
-        allInputs.forEach( (element) => {
+        Array.from(allInputsGet).forEach( (element) => {
             console.log(element);
             
         });
